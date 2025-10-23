@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+nav {
+  display: flex;
+  border: 2px solid black;
+  border-bottom: none;
+  justify-content: space-between;
+}
+nav span {
+  padding: 10px;
+}
+nav img {
+  float: left;
+}
+#name {
+  float: left;
+}
+nav a {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(91, 188, 233);
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+  color: blue;
+  transition: 0.3s;
+}
+header {
+  height: auto;
+  padding: 50px;
+  text-align: center;
+  border: 2px solid black;
+  border-top: none;
+}
+header h1 {
+  font-family: "Brush Script MT", cursive;
+}
+header p {
+  color: grey;
+}
+main {
+  border: 2px solid black;
+  height: 40vh;
+  width: 100%;
+}
+aside,
+section {
+  height: 100%;
+  width: 33%;
+  float: left;
+}
+.left {
+  border: 1px solid black;
+}
+.left h2 {
+  font-family: "Brush Script MT", cursive;
+  padding: 10px;
+}
+.left li {
+  list-style: none;
+  padding: 10px;
+  border-top: 2px solid black;
+}
+.center {
+  border: 1px solid black;
+}
+#up_half {
+  border-bottom: 1px solid black;
+}
+.center p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.center h2,
+h3 {
+  font-family: "Brush Script MT", cursive;
+}
+.center a {
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(91, 188, 233);
+}
+.center a:hover {
+  text-decoration: underline;
+  color: blue;
+  transition: 0.3s;
+}
+
+.right {
+  border-left: 1px solid black;
+}
+.right h2 {
+  font-family: "Brush Script MT", cursive;
+  padding: 10px;
+}
+
+footer {
+  padding: 10px;
+}
+
+footer h2 {
+  font-family: "Brush Script MT", cursive;
+}
+
+.opinion {
+  float: left;
+  width: 30%;
+  margin: 25px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-family: cursive;
+  font-style: italic;
+  box-shadow: 10px 5px 5px darkgray;
+}
+
+.teacher_name {
+  color: gray;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#copyright {
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    height: auto;
+  }
+  nav {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  header {
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+  main,
+  footer {
+    width: 100%;
+    height: auto;
+  }
+  aside,
+  section {
+    width: 100%;
+    height: auto;
+    float: none;
+  }
+  .opinion {
+    width: 25%;
+    margin: 15px;
+  }
+}
